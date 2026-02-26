@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadmatrix India | Grow Your Career</title>
+    <style>
+        /* Global Styles */
+        * { box-sizing: border-box; scroll-behavior: smooth; }
+        body { 
+            margin: 0; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: #0f172a; 
+            color: #f8fafc; 
+            line-height: 1.6;
+        }
+
+        /* Header & Nav */
+        header { 
+            background: rgba(15, 23, 42, 0.9); 
+            padding: 20px; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+            border-bottom: 1px solid #1e293b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #00e5ff; margin-left: 20px; }
+        nav { margin-right: 20px; }
+        nav a { color: #cbd5e1; text-decoration: none; margin: 0 15px; font-weight: 500; transition: 0.3s; }
+        nav a:hover { color: #00e5ff; }
+        
+        .btn-apply { 
+            background: #00e5ff; 
+            color: #0f172a; 
+            padding: 10px 25px; 
+            border-radius: 50px; 
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-apply:hover { background: #fff; transform: translateY(-2px); }
+
+        /* Hero Section */
+        .hero { 
+            padding: 100px 20px; 
+            background: linear-gradient(to bottom, #1e293b, #0f172a);
+            text-align: center;
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; color: #fff; }
+        .hero p { font-size: 1.2rem; color: #94a3b8; }
+
+        /* Sections */
+        section { padding: 80px 20px; max-width: 1000px; margin: 0 auto; }
+        h2 { border-bottom: 2px solid #00e5ff; display: inline-block; padding-bottom: 5px; margin-bottom: 30px; }
+
+        /* Services Grid */
+        .services-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 20px; 
+        }
+        .card { 
+            background: #1e293b; 
+            padding: 30px; 
+            border-radius: 15px; 
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+        .card:hover { border-color: #00e5ff; transform: translateY(-5px); }
+
+        /* Form */
+        form { 
+            background: #1e293b; 
+            padding: 30px; 
+            border-radius: 15px; 
+            max-width: 600px; 
+            margin: 0 auto; 
+        }
+        input, textarea { 
+            width: 100%; 
+            padding: 12px; 
+            margin-bottom: 15px; 
+            border-radius: 8px; 
+            border: 1px solid #334155; 
+            background: #0f172a; 
+            color: white; 
+        }
+        button { 
+            width: 100%; 
+            padding: 15px; 
+            background: #00e5ff; 
+            color: #0f172a; 
+            border: none; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            font-size: 1rem;
+        }
+        button:hover { background: #fff; }
+
+        /* Footer */
+        footer { background: #020617; padding: 30px; text-align: center; color: #64748b; font-size: 0.9rem; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header { flex-direction: column; text-align: center; }
+            nav { margin-top: 15px; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Leadmatrix India</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#careers">Careers</a>
+        <a href="#apply" class="btn-apply">Apply Now</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Grow With Leadmatrix India</h1>
+    <p>Your Trusted Partner for Lead Generation & HR Solutions.</p>
+</div>
+
+<section id="about" style="text-align: center;">
+    <h2>About Us</h2>
+    <p>Leadmatrix India is a premier agency specializing in high-quality lead generation and comprehensive HR support services. We bridge the gap between businesses and talent, ensuring sustainable growth for our clients and partners.</p>
+</section>
+
+<section id="services">
+    <h2 style="display: block; text-align: center;">Our Services</h2>
+    <div class="services-grid">
+        <div class="card">
+            <h3>📈 Lead Generation</h3>
+            <p>Targeted strategies to find the right customers for your business.</p>
+        </div>
+        <div class="card">
+            <h3>🤝 HR Hiring Support</h3>
+            <p>Streamlining recruitment to find top-tier talent for your team.</p>
+        </div>
+        <div class="card">
+            <h3>🚀 Digital Promotion</h3>
+            <p>Boosting your brand presence across all digital platforms.</p>
+        </div>
+    </div>
+</section>
+
+<section id="careers" style="text-align: center; background: #1e293b; border-radius: 20px;">
+    <h2>Careers</h2>
+    <p>We are looking for passionate individuals!</p>
+    <div style="background: #0f172a; padding: 20px; border-radius: 10px; display: inline-block;">
+        <h4 style="margin: 0; color: #00e5ff;">Position: HR Executive</h4>
+        <p style="margin: 5px 0;">Work From Home | Incentive Based</p>
+    </div>
+</section>
+
+<section id="apply">
+    <h2 style="display: block; text-align: center;">Apply Now</h2>
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="email" placeholder="Email Address" required>
+        <textarea placeholder="Tell us about yourself..." rows="4"></textarea>
+        <button type="submit">Submit Application</button>
+    </form>
+</section>
+
+<section id="contact" style="text-align: center;">
+    <h2>Contact Us</h2>
+    <p>📧 Email: <a href="mailto:info@leadmatrixindia.com" style="color:#00e5ff">info@leadmatrixindia.com</a></p>
+    <p>📞 Phone: +91-XXXXXXXXXX</p>
+</section>
+
+<footer>
+    <p>© 2026 Leadmatrix India. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
